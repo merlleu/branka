@@ -1,0 +1,190 @@
+{
+  "client_id": 123,
+  "flags": 0,
+  "user": [
+    123,
+    0
+  ],
+  "perms_i": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "perms_s": [
+    {
+      "scope": "apps",
+      "crud": 233
+    },
+    {
+      "scope": "apps:secret",
+      "crud": 233
+    },
+    {
+      "scope": "apps:settings",
+      "crud": 233
+    },
+    {
+      "scope": "oauth2:sessions",
+      "crud": 233
+    },
+    {
+      "scope": "oauth2:authorization_code",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:public",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:public:connections",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:public:structures",
+      "crud": 233
+    },
+    {
+      "scope": "accounts",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:flags",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:permissions",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:connections:{provider}",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:connections:{provider}:token",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:structures",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:tokens",
+      "crud": 233
+    },
+    {
+      "scope": "challenges:validate:v1",
+      "crud": 233
+    },
+    {
+      "scope": "accounts:emit_hooks",
+      "crud": 233
+    },
+    {
+      "scope": "audit-logs",
+      "crud": 233
+    },
+    {
+      "scope": "discord:guilds:config",
+      "crud": 233
+    },
+    {
+      "scope": "discord:guilds:members",
+      "crud": 233
+    },
+    {
+      "scope": "eos:accounts",
+      "crud": 233
+    },
+    {
+      "scope": "eos:accounts:db",
+      "crud": 233
+    },
+    {
+      "scope": "eos:ecommerce:orders",
+      "crud": 233
+    },
+    {
+      "scope": "epicauth:{ns}:accounts",
+      "crud": 233
+    },
+    {
+      "scope": "epicauth:{ns}:accounts:token",
+      "crud": 233
+    },
+    {
+      "scope": "fortnite:analytics",
+      "crud": 233
+    },
+    {
+      "scope": "quests:{ns}:campaign",
+      "crud": 233
+    },
+    {
+      "scope": "quests:{ns}:campaign:stats",
+      "crud": 233
+    },
+    {
+      "scope": "quests:{ns}:campaign:user",
+      "crud": 233
+    },
+    {
+      "scope": "kd:admin:config",
+      "crud": 233
+    },
+    {
+      "scope": "kd:admin:stats",
+      "crud": 233
+    },
+    {
+      "scope": "kd:player",
+      "crud": 233
+    },
+    {
+      "scope": "kd:cli:stats",
+      "crud": 233
+    },
+    {
+      "scope": "kd:cli:key",
+      "crud": 233
+    },
+    {
+      "scope": "kd:fnbots:stats",
+      "crud": 233
+    },
+    {
+      "scope": "kd:fnbots:key",
+      "crud": 233
+    },
+    {
+      "scope": "leaderboards",
+      "crud": 233
+    },
+    {
+      "scope": "leaderboards:entries",
+      "crud": 233
+    },
+    {
+      "scope": "leaderboards:entries:overrides",
+      "crud": 233
+    },
+    {
+      "scope": "leaderboards:sessions",
+      "crud": 233
+    },
+    {
+      "scope": "leaderboards:sessions:sources:{src}",
+      "crud": 233
+    },
+    {
+      "scope": "leaderboards:",
+      "crud": 233
+    }
+  ]
+}
