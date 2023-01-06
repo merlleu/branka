@@ -5,469 +5,174 @@
     123,
     0
   ],
-  "perms_i": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10
-  ],
+  "perms_i": [],
   "perms_s": [
     {
-      "scope": "product:public:products",
+      "scope": "epicgames:alternatives",
       "crud": 2
     },
     {
-      "scope": "partnerintegration:uplay:b2669637424941f995c0698f2dc396a5",
-      "crud": 6
-    },
-    {
-      "scope": "review:public:report:target",
-      "crud": 1
-    },
-    {
-      "scope": "communications:internal:read:settings",
+      "scope": "epicgames:accounts:*:meta",
       "crud": 2
     },
     {
-      "scope": "communications:external:account:get",
+      "scope": "twitter:users:wlfortnite:timeline",
       "crud": 2
     },
     {
-      "scope": "publishing:public:product:category",
-      "crud": 11
-    },
-    {
-      "scope": "presence:_:b2669637424941f995c0698f2dc396a5",
-      "crud": 4
-    },
-    {
-      "scope": "ecommerce:integration:public:b2669637424941f995c0698f2dc396a5:ownershipCheckToken",
-      "crud": 1
-    },
-    {
-      "scope": "social:search:b2669637424941f995c0698f2dc396a5",
+      "scope": "twitter:users:*",
       "crud": 2
     },
     {
-      "scope": "publishing:public:product:localization",
-      "crud": 15
-    },
-    {
-      "scope": "payment:public:b2669637424941f995c0698f2dc396a5:billingaccount:default",
+      "scope": "discord:user:guilds",
       "crud": 2
     },
     {
-      "scope": "launcher:download:live",
-      "crud": 2
-    },
-    {
-      "scope": "coderedemption:public:b2669637424941f995c0698f2dc396a5:coupons:free",
+      "scope": "discord:guilds:config",
       "crud": 3
     },
     {
-      "scope": "friends:b2669637424941f995c0698f2dc396a5",
-      "crud": 15
-    },
-    {
-      "scope": "*:messaging:b2669637424941f995c0698f2dc396a5:*",
-      "crud": 15
-    },
-    {
-      "scope": "entitlement",
+      "scope": "search:events:featured",
       "crud": 2
     },
     {
-      "scope": "artifact:binary",
-      "crud": 15
-    },
-    {
-      "scope": "publishing:public:product:fulfillment",
+      "scope": "events",
       "crud": 7
     },
     {
-      "scope": "catalog:shared:offers",
-      "crud": 2
-    },
-    {
-      "scope": "account:public:account:externalAuths",
+      "scope": "events:hooks",
       "crud": 7
     },
     {
-      "scope": "account:public:account",
-      "crud": 6
-    },
-    {
-      "scope": "publishing:public:product:snapshot",
-      "crud": 2
-    },
-    {
-      "scope": "list:public:b2669637424941f995c0698f2dc396a5:wishlist",
-      "crud": 15
-    },
-    {
-      "scope": "fraud:shared:b2669637424941f995c0698f2dc396a5:accountGroups",
-      "crud": 2
-    },
-    {
-      "scope": "coderedemption:shared:redeem",
-      "crud": 5
-    },
-    {
-      "scope": "catalog:shared:*",
-      "crud": 2
-    },
-    {
-      "scope": "review:public:like",
-      "crud": 6
-    },
-    {
-      "scope": "product:public:sandboxpermission",
-      "crud": 2
-    },
-    {
-      "scope": "*:messaging:b2669637424941f995c0698f2dc396a5",
-      "crud": 15
-    },
-    {
-      "scope": "xmpp:session:*:b2669637424941f995c0698f2dc396a5",
-      "crud": 1
-    },
-    {
-      "scope": "persona:settings:account:b2669637424941f995c0698f2dc396a5",
-      "crud": 15
-    },
-    {
-      "scope": "list:public:b2669637424941f995c0698f2dc396a5:toast",
-      "crud": 6
-    },
-    {
-      "scope": "list:public:b2669637424941f995c0698f2dc396a5:cart",
+      "scope": "kd:admin:config",
       "crud": 11
     },
     {
-      "scope": "library:public:b2669637424941f995c0698f2dc396a5:collection:item",
+      "scope": "kd:admin:stats",
+      "crud": 2
+    },
+    {
+      "scope": "events:player:teams",
+      "crud": 2
+    },
+    {
+      "scope": "events:teams",
+      "crud": 10
+    },
+    {
+      "scope": "events:permissions",
       "crud": 11
     },
     {
-      "scope": "launcher:download:production:*",
-      "crud": 2
+      "scope": "leaderboards",
+      "crud": 7
     },
     {
-      "scope": "storediscovery:public:topics",
-      "crud": 2
-    },
-    {
-      "scope": "launcher:library:items",
-      "crud": 2
-    },
-    {
-      "scope": "publishing:public:product:media",
+      "scope": "events:scoring",
       "crud": 11
     },
     {
-      "scope": "persona:account:lookup",
-      "crud": 2
-    },
-    {
-      "scope": "friends:connections:b2669637424941f995c0698f2dc396a5",
-      "crud": 2
-    },
-    {
-      "scope": "priceengine:shared:promotionrule",
-      "crud": 2
-    },
-    {
-      "scope": "payment:public:b2669637424941f995c0698f2dc396a5:wallet",
-      "crud": 2
-    },
-    {
-      "scope": "orderprocessor:shared:order:b2669637424941f995c0698f2dc396a5:preview",
+      "scope": "leaderboards:sessions:sources:fn.signedrecap.v1",
       "crud": 1
     },
     {
-      "scope": "library:public:b2669637424941f995c0698f2dc396a5:playtime",
-      "crud": 6
-    },
-    {
-      "scope": "publishing:public:submission",
-      "crud": 2
-    },
-    {
-      "scope": "fulfillment:public:code",
+      "scope": "leaderboards:sessions:sources:fn.alternative.v2",
       "crud": 1
     },
     {
-      "scope": "account:accounts:b2669637424941f995c0698f2dc396a5:metadata:LAUNCHER_SSO_OFF",
-      "crud": 15
-    },
-    {
-      "scope": "account:accounts:b2669637424941f995c0698f2dc396a5:metadata",
+      "scope": "leaderboards:entries",
       "crud": 2
     },
     {
-      "scope": "organization:admin:account:b2669637424941f995c0698f2dc396a5:organizations",
-      "crud": 2
+      "scope": "leaderboards:dropmaps",
+      "crud": 11
     },
     {
-      "scope": "userList:*:b2669637424941f995c0698f2dc396a5",
-      "crud": 2
-    },
-    {
-      "scope": "orderprocessor:shared:order:b2669637424941f995c0698f2dc396a5:create",
+      "scope": "leaderboards:grand_discord_roles",
       "crud": 1
     },
     {
-      "scope": "mediaservice:egstore",
-      "crud": 2
-    },
-    {
-      "scope": "launcher:download:production",
-      "crud": 2
-    },
-    {
-      "scope": "account:public:account:*",
-      "crud": 2
-    },
-    {
-      "scope": "library:public:apps:live",
-      "crud": 2
-    },
-    {
-      "scope": "publishing:public:product:asset",
-      "crud": 15
-    },
-    {
-      "scope": "fraud:shared:paymentfraud",
+      "scope": "leaderboards:sessions:history",
       "crud": 1
     },
     {
-      "scope": "friends:b2669637424941f995c0698f2dc396a5:*",
-      "crud": 15
-    },
-    {
-      "scope": "library:public:items",
+      "scope": "leaderboards:sessions",
       "crud": 2
     },
     {
-      "scope": "userList:*:b2669637424941f995c0698f2dc396a5:*",
+      "scope": "leaderboards:sessions-teams",
       "crud": 2
     },
     {
-      "scope": "social:teams:ns:*",
-      "crud": 6
-    },
-    {
-      "scope": "product:public:sandboxes",
-      "crud": 2
-    },
-    {
-      "scope": "eulatracking:shared:responsehistory",
-      "crud": 2
-    },
-    {
-      "scope": "account:public:account:addresses",
-      "crud": 2
-    },
-    {
-      "scope": "orionlive:play",
-      "crud": 15
-    },
-    {
-      "scope": "entitlement:account:b2669637424941f995c0698f2dc396a5:entitlements",
-      "crud": 2
-    },
-    {
-      "scope": "publishing:public:product",
-      "crud": 15
-    },
-    {
-      "scope": "library:public:b2669637424941f995c0698f2dc396a5:collection",
-      "crud": 15
-    },
-    {
-      "scope": "developerprivacy:settings:b2669637424941f995c0698f2dc396a5",
-      "crud": 6
-    },
-    {
-      "scope": "connect:connect",
-      "crud": 1
-    },
-    {
-      "scope": "mod:public:settings",
-      "crud": 2
-    },
-    {
-      "scope": "orionlive:download",
-      "crud": 15
-    },
-    {
-      "scope": "mod:public:mod",
-      "crud": 2
-    },
-    {
-      "scope": "eulatracking:shared:latestagreement",
-      "crud": 2
-    },
-    {
-      "scope": "account:accounts:b2669637424941f995c0698f2dc396a5:metadata:*",
-      "crud": 2
-    },
-    {
-      "scope": "payment:public:b2669637424941f995c0698f2dc396a5:billingaccount",
-      "crud": 2
-    },
-    {
-      "scope": "eas:token:claim:pfdid:_",
-      "crud": 1
-    },
-    {
-      "scope": "publishing:public:errorlog",
-      "crud": 2
-    },
-    {
-      "scope": "account:token:otherSessionsWithSameSourceForAccount",
-      "crud": 8
-    },
-    {
-      "scope": "serviceinstance",
-      "crud": 2
-    },
-    {
-      "scope": "coderedemption:public:b2669637424941f995c0698f2dc396a5:codes",
-      "crud": 2
-    },
-    {
-      "scope": "*:cloudstorage:system",
-      "crud": 2
-    },
-    {
-      "scope": "library:public:b2669637424941f995c0698f2dc396a5:playtime:all",
-      "crud": 2
-    },
-    {
-      "scope": "eulatracking:public:displayagreement:b2669637424941f995c0698f2dc396a5",
-      "crud": 2
-    },
-    {
-      "scope": "communications:external:create:setting",
-      "crud": 1
-    },
-    {
-      "scope": "orderprocessor:public:b2669637424941f995c0698f2dc396a5:salesReport",
-      "crud": 2
-    },
-    {
-      "scope": "priceengine:shared:offer:price",
-      "crud": 2
-    },
-    {
-      "scope": "launcher:download:label:live:app:*:ticket",
-      "crud": 1
-    },
-    {
-      "scope": "launcher:download:app:*",
-      "crud": 2
-    },
-    {
-      "scope": "communications:external:read:setting",
-      "crud": 2
-    },
-    {
-      "scope": "persona:accounts:b2669637424941f995c0698f2dc396a5",
-      "crud": 15
-    },
-    {
-      "scope": "launcher:download:live:*",
-      "crud": 2
-    },
-    {
-      "scope": "purchase:offers",
-      "crud": 2
-    },
-    {
-      "scope": "launcher:purchase:offers",
-      "crud": 2
-    },
-    {
-      "scope": "userList:*:b2669637424941f995c0698f2dc396a5:*:*",
-      "crud": 2
-    },
-    {
-      "scope": "eulatracking:public:response:b2669637424941f995c0698f2dc396a5",
-      "crud": 1
-    },
-    {
-      "scope": "buildinfo:buildmanifest:*",
-      "crud": 2
-    },
-    {
-      "scope": "blockList:b2669637424941f995c0698f2dc396a5",
-      "crud": 14
-    },
-    {
-      "scope": "*:cloudstorage:system:*",
-      "crud": 2
-    },
-    {
-      "scope": "ut:cloudstorage:user:b2669637424941f995c0698f2dc396a5:*",
-      "crud": 15
-    },
-    {
-      "scope": "mod:public:product",
-      "crud": 2
-    },
-    {
-      "scope": "poll:public:poll",
-      "crud": 6
-    },
-    {
-      "scope": "account:oauth:exchangeTokenCode",
-      "crud": 15
-    },
-    {
-      "scope": "orderprocessor:shared:order:b2669637424941f995c0698f2dc396a5:freePurchase",
-      "crud": 1
-    },
-    {
-      "scope": "delivery:public:downloadurls:b2669637424941f995c0698f2dc396a5",
-      "crud": 2
-    },
-    {
-      "scope": "review:public:*",
-      "crud": 15
-    },
-    {
-      "scope": "orderprocessor:shared:order:b2669637424941f995c0698f2dc396a5:quickPurchase",
-      "crud": 1
-    },
-    {
-      "scope": "catalog:shared:items",
-      "crud": 2
-    },
-    {
-      "scope": "ut:cloudstorage:user:b2669637424941f995c0698f2dc396a5",
-      "crud": 15
-    },
-    {
-      "scope": "account:admin:token:authorizationCode",
-      "crud": 1
-    },
-    {
-      "scope": "library:public:b2669637424941f995c0698f2dc396a5:playtime:bulk",
+      "scope": "leaderboards:sessions:status",
       "crud": 4
     },
     {
-      "scope": "priceengine:shared:salesevent",
+      "scope": "leaderboards:streams:live",
       "crud": 2
     },
     {
-      "scope": "catalog:public:games",
+      "scope": "leaderboards:overrides",
+      "crud": 9
+    },
+    {
+      "scope": "oauth2:sessions",
+      "crud": 8
+    },
+    {
+      "scope": "releases:*:*:*:*:*",
+      "crud": 2
+    },
+    {
+      "scope": "search:events:public",
+      "crud": 2
+    },
+    {
+      "scope": "teams",
+      "crud": 3
+    },
+    {
+      "scope": "kd:player",
+      "crud": 11
+    },
+    {
+      "scope": "teams:members",
+      "crud": 12
+    },
+    {
+      "scope": "teams:owner",
+      "crud": 4
+    },
+    {
+      "scope": "accounts",
+      "crud": 6
+    },
+    {
+      "scope": "accounts:connections:*",
+      "crud": 10
+    },
+    {
+      "scope": "accounts:events",
+      "crud": 2
+    },
+    {
+      "scope": "accounts:invites",
+      "crud": 2
+    },
+    {
+      "scope": "challenges:validate:v1",
+      "crud": 4
+    },
+    {
+      "scope": "accounts:tokens",
+      "crud": 2
+    },
+    {
+      "scope": "uploads",
+      "crud": 1
+    },
+    {
+      "scope": "accounts:public",
       "crud": 2
     }
   ]

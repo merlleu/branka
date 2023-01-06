@@ -37,9 +37,11 @@ fn load(test_file: &str) -> SvcTokenV1 {
     serde_json::from_reader(f).unwrap()
 }
 
-static TEST_FILES: [&str; 2] = ["test_1.json", "test_2.json"];
+static TEST_FILES: [&str; 4] = ["test_1.json", "test_2.json", "test_3.json", "test_4.json"];
 
 mod random_tokens {
+    use std::fs::write;
+
     use super::*;
 
     pub fn bench_encode(c: &mut Criterion) {
@@ -50,22 +52,16 @@ mod random_tokens {
 
             let input = load(fl);
 
-            
             // group.throughput(Throughput::Bytes(*size as u64));
             group.throughput(Throughput::Elements(1));
             let branca = Branka::new(&key, 3000);
             let i = 6;
             let compression = Compression::new(i);
-            group.bench_with_input(BenchmarkId::new("gz", i), &input, |b, input_message| {
-                b.iter(|| {
-                    let r = branca.encode_gz_struct(black_box(&input_message), compression);
-                    black_box(r);
-                })
-            });
 
-            group.bench_with_input(BenchmarkId::new("zlib", i), &input, |b, input_message| {
+            // raw
+            group.bench_with_input(BenchmarkId::new("raw", i), &input, |b, input_message| {
                 b.iter(|| {
-                    let r = branca.encode_zlib_struct(black_box(&input_message), compression);
+                    let r = branca.encode_struct(black_box(&input_message));
                     black_box(r);
                 })
             });
@@ -76,8 +72,8 @@ mod random_tokens {
                 &input,
                 |b, input_message| {
                     b.iter(|| {
-                        let r = branca
-                            .encode_deflate_struct(black_box(&input_message), compression);
+                        let r =
+                            branca.encode_deflate_struct(black_box(&input_message), compression);
                         black_box(r);
                     })
                 },
@@ -96,28 +92,20 @@ mod random_tokens {
             let branca = Branka::new(&key, 3000);
             let i = 6;
             let compression = Compression::new(i);
-            let token = branca.encode_gz_struct(&input, compression);
-            group.bench_with_input(BenchmarkId::new("gz", i), &token, |b, input_message| {
-                b.iter(|| {
-                    let r: SvcTokenV1 =
-                        branca.decode_gz_struct(black_box(&input_message)).unwrap();
-                    black_box(r);
-                })
-            });
 
-            // zlib
-            let token = branca.encode_zlib_struct(&input, compression);
-            group.bench_with_input(BenchmarkId::new("zlib", i), &token, |b, input_message| {
+            // raw
+            let token = branca.encode_struct(&input);
+            write(format!("{}_raw.token", fl), &token);
+            group.bench_with_input(BenchmarkId::new("raw", i), &token, |b, input_message| {
                 b.iter(|| {
-                    let r: SvcTokenV1 = branca
-                        .decode_zlib_struct(black_box(&input_message))
-                        .unwrap();
+                    let r: SvcTokenV1 = branca.decode_struct(black_box(&input_message)).unwrap();
                     black_box(r);
                 })
             });
 
             // deflate
             let token = branca.encode_deflate_struct(&input, compression);
+            write(format!("{}_deflate.token", fl), &token);
             group.bench_with_input(
                 BenchmarkId::new("deflate", i),
                 &token,
@@ -130,7 +118,6 @@ mod random_tokens {
                     })
                 },
             );
-            
         }
     }
 
